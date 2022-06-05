@@ -1,0 +1,692 @@
+<html>
+
+<head>
+    <title>Practice Web</title>
+    <link rel="icon" href="C:\Users\Ishaan\Downloads\original.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .header {
+        background-color: floralwhite;
+        padding: 0%;
+        height: 70px;
+        margin: 0%;
+        overflow: hidden;
+        position: relative;
+
+
+    }
+
+    .nav {
+        background-color: black;
+        height: 41px;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        clear: both;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+
+    }
+
+    ul1 {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    ul2 {
+        list-style-type: none;
+        margin: 0px;
+    }
+
+    ul3 {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul4 {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    li1 {
+        float: left;
+        font-size: 20px;
+        padding: 0%;
+        margin: 0%;
+        overflow: hidden;
+    }
+
+    li2 {
+        float: left;
+        font-size: 17px;
+        color: white;
+    }
+
+    li3 {
+        font-size: 20px;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    li4 {
+        font-size: 20px;
+        padding: 0%;
+        margin: 0%;
+        overflow: hidden;
+    }
+
+
+    li1 a {
+        display: block;
+        padding: 22px 35px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        margin: 0%;
+    }
+
+    li1 a:hover {
+        background-color: coral;
+    }
+
+    li2 a {
+        display: block;
+        padding: 8px 20px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+    }
+
+    li2 a:hover {
+        background-color: coral;
+    }
+
+    li3 a {
+        display: block;
+        padding: 9px 20px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+    }
+
+    li3 a:hover {
+        background-color: gray;
+    }
+
+    li4 a {
+        display: block;
+        padding: 9px 20px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+    }
+
+    .pre {
+        background-color: coral;
+
+    }
+
+    .login {
+        border: 0.1px solid coral;
+        background-color: coral;
+        border-radius: 30px;
+        margin: 15px;
+        padding: 5px 25px;
+        float: right;
+        font-size: 20px;
+        color: white;
+    }
+
+    .login:hover {
+        background-color: chocolate;
+    }
+
+    .leftcol {
+        width: 15%;
+        padding: 0%;
+        height: 100%;
+        clear: both;
+        float: left;
+        background-color: white;
+        overflow: auto;
+    }
+
+    .rightcol {
+        width: 85%;
+        height: 100%;
+        float: left;
+        background-color: lightseagreen;
+        overflow: auto;
+        z-index: -1;
+    }
+
+    .rightcol::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    h1 {
+        font-size: 50px;
+        margin-top: 80px;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+        display: inline-block;
+
+    }
+
+    p1 {
+        font-size: 20px;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 5px;
+        display: inline-block;
+        padding-bottom: 10px;
+
+    }
+
+    p2 {
+        font-size: 25px;
+        color: white;
+        font-family: monospace;
+        font-weight: 100px;
+        display: inline-block;
+        padding-top: 30px;
+        padding-bottom: 15px;
+
+    }
+
+    p3,
+    p4,
+    p5 {
+        font-size: 35px;
+        color: white;
+        font-family: monospace;
+    }
+
+    p6 {
+        font-size: 35px;
+        color: white;
+        font-family: monospace;
+        animation-name: blink;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+
+
+
+    .firstrow {
+        width: auto;
+        height: max-content;
+        text-align: center;
+        background-color: cadetblue;
+        background-image: linear-gradient(to bottom, cadetblue, orange);
+        align-items: center;
+        clear: both;
+        padding-bottom: 100px;
+    }
+
+    .secondrow {
+        width: auto;
+        height: fit-content;
+        background-color: black;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .menu {
+        display: none;
+        background-color: floralwhite;
+        margin-top: 20px;
+        margin-left: 5px;
+        border: none;
+        float: left;
+        font-size: 20px;
+    }
+
+    .menuline {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 5px;
+    }
+
+    .menuex {
+        width: 25%;
+        height: 100%;
+        background-color: brown;
+        display: none;
+        position: absolute;
+        width: 0px;
+        overflow: auto;
+        transition: 0.5s;
+    }
+
+    .leftcolexp {
+        position: absolute;
+        height: 30px;
+        width: 40px;
+        display: none;
+        margin-top: 30%;
+    }
+
+    .leftcolshr {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        display: none;
+        margin-top: 30%;
+        margin-left: 15%;
+    }
+
+    .close {
+        float: right;
+        height: 20px;
+        width: 20px;
+        margin-top: 15px;
+        margin-right: 15px;
+
+    }
+
+    .loginwin {
+        position: fixed;
+        overflow: auto;
+        background-color: aliceblue;
+        z-index: 1;
+        height: 50%;
+        width: 65%;
+        top: 0;
+        transform: scale(0);
+        left: 0;
+        margin-top: 10%;
+        margin-left: 20%;
+        display: none;
+        animation: loginan 0.5s 1;
+        transition: 0.5s;
+    }
+
+    .loginwincon {
+        margin: 5% auto 2% auto;
+        padding: 20px;
+        height: 60%;
+        bottom: 0;
+    }
+
+    .loginwinfoot {
+        padding: 20px;
+    }
+
+    .search {
+        float: right;
+        margin-top: 20px;
+    }
+
+    .searchbut {
+        height: 100px;
+        width: 20px;
+        float: right;
+        margin-top: 5px;
+    }
+
+    span {
+        float: right;
+    }
+
+    input[type=password] {
+
+        width: 100%;
+    }
+
+    .loginwin button {
+        margin: 8px 0;
+        border: thin;
+        border-radius: 20%;
+    }
+
+    .search button {
+        float: right;
+        padding: 8px;
+        border: none;
+        background-color: lightgray
+    }
+
+    .search input {
+        border: none;
+        padding: 3px;
+        width: 130px;
+    }
+
+    .close {
+        cursor: pointer;
+        font-size: larger;
+    }
+
+    .mtool {
+        background-color: red;
+        height: 33;
+        width: 45;
+        display: block;
+    }
+
+
+
+    @keyframes loginan {
+        form {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 100%;
+        }
+
+        50% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+
+
+    @media screen and (max-width: 900px) {
+        .rightcol {
+            width: 100%;
+        }
+
+        li1 {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+        }
+
+        .menuex {
+            display: block;
+        }
+
+        .leftcolexp {
+            display: inline;
+        }
+
+        .leftcol {
+            float: none;
+            position: absolute;
+            display: none;
+        }
+
+    }
+
+    @media screen and (min-width: 901px) {
+        .leftcol {
+            float: left;
+            width: 15%;
+            position: unset;
+            display: block;
+        }
+
+        .rightcol {
+            float: left;
+        }
+
+        .menuex {
+            display: none;
+        }
+    }
+</style>
+
+<body onload="time()">
+    <div class="header">
+        <ul1>
+            <li1 class="pre"><a>Home</a></li1>
+            <li1><a>Projects</a></li1>
+            <li1><a>Videos</a></li1>
+            <li1><a>About</a></li1>
+            <div class="login" onclick="loginex()"><a>Login</a></div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button><i class="fa fa-search" aria-hidden="true" style="height: 100%;width: 100%"></i></button>
+            </div>
+            <div class="menu" onclick="menuexpand()" id="x2">
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+            </div>
+        </ul1>
+    </div>
+    <div class="nav">
+        <ul2>
+            <li2><a>HTML</a></li2>
+            <li2><a>KOTLIN</a></li2>
+            <li2><a>C++</a></li2>
+            <!-- <div class="mtool"><a> -->
+                <div id="google_translate_element"></div>
+                <!-- </a>
+            </div> -->
+        </ul2>
+    </div>
+    <div style="margin: 0px;">
+        <div class="leftcol" id="ltcol">
+            <ul3>
+                <li3><a>A</a></li3>
+                <li3><a>B</a></li3>
+                <li3><a>C</a></li3>
+                <li3><a>D</a></li3>
+                <li3><a>E</a></li3>
+                <li3><a>F</a></li3>
+                <li3><a>G</a></li3>
+                <li3><a>H</a></li3>
+                <li3><a>I</a></li3>
+                <li3><a>J</a></li3>
+                <li3><a>K</a></li3>
+                <li3><a>L</a></li3>
+                <li3><a>M</a></li3>
+                <li3><a>N</a></li3>
+                <li3><a>O</a></li3>
+                <li3><a>P</a></li3>
+                <li3><a>Q</a></li3>
+                <li3><a>R</a></li3>
+                <li3><a>S</a></li3>
+                <li3><a>T</a></li3>
+                <li3><a>U</a></li3>
+                <li3><a>V</a></li3>
+                <li3><a>V</a></li3>
+                <li3><a>X</a></li3>
+                <li3><a>Y</a></li3>
+                <li3><a>Z</a></li3>
+                <li3><a>A</a></li3>
+                <li3><a>A</a></li3>
+            </ul3>
+        </div>
+        <!-- <div class="leftcolexp" onclick="ltexp()" id="ltex">
+            <img src="https://www.pngkey.com/png/detail/273-2739689_right-grey-arrow-icon-png-png-images-next.png" style="height: 100%;width:100%"></img>
+        </div>
+        <div class="leftcolshr" onclick="ltshr()" id="ltsh">
+            <img src="https://www.pngfind.com/pngs/m/316-3161853_left-arrow-png-back-icon-app-png-transparent.png" style="height: 100%;width:100%">
+        </div> -->
+        <div class="rightcol" id="rgc">
+            <div class="firstrow">
+                <h1>Welcome</h1><br>
+                <p1>Here are some of my projects!</p1>
+                <div id="gallery" class="carousel slide" data-bs-ride="carousel"
+                    style="width: 40%;margin: auto;min-width: 300px;height: auto;z-index: 0;">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#gallery" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#gallery" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#gallery" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <a href=""><img
+                                    src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg"
+                                    alt="First slide" style="width: 100%;max-height: 100%;"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Title</h3>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.codespot.org/assets/css.jpg" alt="Second slide"
+                                style="width: 100%;height: 200%;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Title</h3>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://thumbs.dreamstime.com/b/javascript-logo-javascript-logo-white-background-vector-format-available-136765881.jpg"
+                                alt="Third slide" style="width: 100%;max-height: 100%;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Title</h3>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="secondrow">
+                <p2>Time is of great importance!<br>Current Time:</p2><br>
+                <p3 id="hr"> </p3>
+                <p6>:</p6>
+                <p4 id="min"></p4>
+                <p6>:</p6>
+                <p5 id="sec"></p5>
+            </div>
+        </div>
+    </div>
+
+    <div class="menuex" id="ani1">
+        <ul4>
+            <div class="close" onclick="menushrink()"><img
+                    src="https://www.seekpng.com/png/full/52-522437_x-cross-close-symbol-icon-button-gui-close.png"
+                    style="width: 100%;height: 100%;"></img></div>
+            <li4><a>Home</a></li4>
+            <li4><a>Projects</a></li4>
+            <li4><a>Videos</a></li4>
+            <li4><a>About</a></li4>
+
+        </ul4>
+    </div>
+    <div class="loginwin" id="lw1">
+        <span onclick="document.getElementById('lw1').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <div class="loginwincon">
+            <form>
+                <label for="uname"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required style="width: 100%;"><br>
+
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+                <button type="submit">Login</button><br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+        </div>
+        <div class="loginwinfoot">
+            <button type="button" onclick="document.getElementById('lw1').style.display='none'">Cancel</button>
+            <span><a>Forget Password?</a></span><br>
+            <span><a>New User?</a></span>
+        </div>
+        </form>
+    </div>
+
+</body>
+<script>
+
+    function menuexpand() {
+        document.getElementById('ani1').style.width = "80%";
+        document.getElementById('rgc').style.opacity = "0.5";
+    }
+
+    function menushrink() {
+        document.getElementById('ani1').style.width = "0%";
+        document.getElementById('rgc').style.opacity = "1";
+    }
+    function time() {
+
+        const d = new Date();
+        document.getElementById('hr').innerHTML = d.getHours();
+        document.getElementById('min').innerHTML = d.getMinutes();
+        document.getElementById('sec').innerHTML = d.getSeconds();
+        setTimeout('time()', 1);
+    }
+
+    function ltexp() {
+        document.getElementById('ltcol').style.display = "inline";
+        document.getElementById('ltex').style.display = "none";
+        document.getElementById('gallery').style.opacity = "0";
+        document.getElementById('ltsh').style.display = "inline";
+    }
+
+    function ltshr() {
+        document.getElementById('ltcol').style.display = "none";
+        document.getElementById('ltsh').style.display = "none";
+        document.getElementById('gallery').style.opacity = "1";
+        document.getElementById('ltex').style.display = "inline";
+    }
+
+    function loginex() {
+        document.getElementById('lw1').style.display = "block";
+        // document.getElementById('lw1').style.animation = "loginan 0.5s 1";
+        document.getElementById('lw1').style.transform = "scale(1)";
+    }
+
+
+    window.onclick = function (event) {
+        var xx = document.getElementById('ani1');
+        var xx2 = document.getElementById('x2');
+        if (event.target != xx && event.target != xx2) {
+            menushrink();
+        }
+    };
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'en' },
+            'google_translate_element'
+        );
+    }
+
+
+
+
+    // const mediaQuery = window.matchMedia('(min-width: 900px)')
+    // if(mediaQuery.matches){
+    //     document.getElementById('ltcol').style.display = "inline";
+    //     document.getElementById('ltex').style.display = "none";
+    // }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</html>
