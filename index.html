@@ -15,14 +15,12 @@
     }
 
     .header {
-        background-color: floralwhite;
+        background-color:aliceblue;
         padding: 0%;
         height: 70px;
         margin: 0%;
         overflow: hidden;
         position: relative;
-
-
     }
 
     .nav {
@@ -235,7 +233,7 @@
         height: max-content;
         text-align: center;
         background-color: cadetblue;
-        background-image: linear-gradient(to bottom, cadetblue, orange);
+        background-image: linear-gradient(to top right, aqua, rgb(76, 181, 231), rgb(187, 229, 235));
         align-items: center;
         clear: both;
         padding-bottom: 100px;
@@ -439,7 +437,7 @@
 
     }
 
-    @media screen and (min-width: 901px) {
+    /* @media screen and (min-width: 901px) {
         .leftcol {
             float: left;
             width: 15%;
@@ -454,7 +452,7 @@
         .menuex {
             display: none;
         }
-    }
+    } */
 </style>
 
 <body onload="time()">
@@ -516,8 +514,6 @@
                 <li3><a>X</a></li3>
                 <li3><a>Y</a></li3>
                 <li3><a>Z</a></li3>
-                <li3><a>A</a></li3>
-                <li3><a>A</a></li3>
             </ul3>
         </div>
         <!-- <div class="leftcolexp" onclick="ltexp()" id="ltex">
@@ -575,12 +571,15 @@
                 </div>
             </div>
             <div class="secondrow">
-                <p2>Time is of great importance!<br>Current Time:</p2><br>
+                <p2>Current Time:</p2><br>
                 <p3 id="hr"> </p3>
                 <p6>:</p6>
                 <p4 id="min"></p4>
                 <p6>:</p6>
                 <p5 id="sec"></p5>
+            </div>
+            <div>
+                
             </div>
         </div>
     </div>
@@ -597,6 +596,8 @@
 
         </ul4>
     </div>
+
+
     <div class="loginwin" id="lw1">
         <span onclick="document.getElementById('lw1').style.display='none'" class="close"
             title="Close Modal">&times;</span>
